@@ -2,7 +2,13 @@
 #include "includeAll.h"
 //=============================================================================
 void GetKeys() {
+  static uint8_t tempKeyValue = D_keyNull;
+
+  DelayMs(5);
   if (P_key1 == 0) {
-    keyValue = D_keyValue1;
+    tempKeyValue = D_keyValue1;
+  } else {
+    keyValue = tempKeyValue;
+    tempKeyValue = D_keyNull;
   }
 }
