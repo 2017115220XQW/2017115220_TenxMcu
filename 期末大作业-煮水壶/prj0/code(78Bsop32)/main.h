@@ -24,4 +24,6 @@ void TimeProcess();
 void TaskSetting();
 void TaskProcess();
 void DisplayProcess();
+ void delayMs(uint16_t msCount);
 #endif
+

@@ -1,5 +1,5 @@
 [Project Data state]
-SYSCFG = 00 88 10 
+SYSCFG = 1F 88 10 
 SYSCFG_ATK_ENABLE = 0
 MULTI_LANGUAGE = 0
 IRCF_O = 0
