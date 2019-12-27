@@ -96,6 +96,13 @@ void TIMER2_int(void) interrupt 5
 {//88khz
 	TF2 = 0; // clear interrupt flag
   	b1ms = 1;
+  	if(buzzCounter>0){
+   		F_buzz();
+ 			buzzCounter--;
+ 		}
+ 	if(led12){
+ 		BuzzCount(100);
+ 	}
 }
 //=============================================================================
 // Function:	void TIMER3_int(void)
